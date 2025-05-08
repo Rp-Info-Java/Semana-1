@@ -21,7 +21,7 @@ public class Main {
         long numero = 0;
 
         System.out.println(Integer.parseInt(cidade)); //sempre usar variável maiuscula pra parse
-        System.out.println(data + "\n" + data2 + "\n");
+        System.out.println(data + "\n" + data2);
 
 
     }
