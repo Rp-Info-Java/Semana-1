@@ -64,4 +64,16 @@ public class ProjetoInicio {
             System.out.println("A palavra convertida é igual a false");
         }
     }
+
+    public static void Exercicio3(){
+        Scanner teclado = new Scanner(System.in);
+        String palavra;
+
+        System.out.println("Insira uma palavra: ");
+        palavra = teclado.nextLine();
+
+        for(int i = 0; i < palavra.length(); i++){
+            System.out.println("Extração do caractere " + i + ": " + palavra.charAt(i));
+        }
+    }
 }
