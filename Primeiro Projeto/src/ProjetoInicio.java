@@ -76,4 +76,18 @@ public class ProjetoInicio {
             System.out.println("Extração do caractere " + i + ": " + palavra.charAt(i));
         }
     }
+
+    public static void Exercicio4(){
+        Scanner teclado = new Scanner(System.in);
+        double numDouble = 21.5;
+        double aux = 0D;
+
+        int numInt = (int)numDouble;
+        int resto;
+
+        aux = numDouble*10;
+        resto = (int)aux%10;
+
+        System.out.println("Dígito double: " + numDouble + "\n" + "Dígito double convertido para int: " + numInt + "\nParte decimal do dígito: " + resto);
+    }
 }

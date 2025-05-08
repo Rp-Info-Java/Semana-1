@@ -3,6 +3,7 @@ public class Main {
         //ProjetoInicio.Aula1();
         //ProjetoInicio.Exercicio1();
         //ProjetoInicio.Exercicio2();
-        ProjetoInicio.Exercicio3();
+        //ProjetoInicio.Exercicio3();
+        ProjetoInicio.Exercicio4();
     }
 }
