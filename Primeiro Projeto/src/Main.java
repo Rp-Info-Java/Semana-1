@@ -4,6 +4,7 @@ public class Main {
         //ProjetoInicio.Exercicio1();
         //ProjetoInicio.Exercicio2();
         //ProjetoInicio.Exercicio3();
-        ProjetoInicio.Exercicio4();
+        //ProjetoInicio.Exercicio4();
+        ProjetoInicio.Exercicio5();
     }
 }

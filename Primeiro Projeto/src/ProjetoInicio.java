@@ -90,4 +90,15 @@ public class ProjetoInicio {
 
         System.out.println("Dígito double: " + numDouble + "\n" + "Dígito double convertido para int: " + numInt + "\nParte decimal do dígito: " + resto);
     }
+
+    public static void Exercicio5(){
+        String palavra = "abc";
+        double palavraConvert;
+
+        try {
+            palavraConvert = Double.parseDouble(palavra);
+        }catch (Exception e){
+            System.err.println("Erro: " + e + "\nA conversão para Double não pode ser realizada pois espera uma String contendo números, e recebe uma String contendo letras! Tente uma nova conversão.");
+        }
+    }
 }
