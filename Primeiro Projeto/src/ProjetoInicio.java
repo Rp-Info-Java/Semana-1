@@ -185,4 +185,14 @@ public class ProjetoInicio {
         System.out.println("Nome do usuário: " + nome + "\nIdade: " + idade + " anos" + "\nAltura: " + altura + "(m)" + "\nÉ estudante? Resposta: " + estudante);
 
     }
+
+    public static void VarOperations(){
+        int num1 = 22, num2 = -4;
+
+        System.out.println("Cálculos simples com números inteiros\n" + "Número 1: " + num1 + "\nNúmero 2: " + num2);
+        System.out.println("\nSoma dos números: " + (num1+num2));
+        System.out.println("Subtração dos números: " + (num1 - num2));
+        System.out.println("Multiplicação dos números: " + (num1 * num2));
+        System.out.println("Divisão dos números (apenas o valor inteiro da divisão é apresentado): " + (num1 / num2));
+    }
 }
