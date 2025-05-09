@@ -10,5 +10,9 @@ public class Main {
         //ProjetoInicio.Variaveis();
         //ProjetoInicio.VarOperations();
         //ProjetoInicio.StringManipulation();
+
+        //------------------------------------//
+
+        expressoesLogicas.Previsao();
     }
 }
