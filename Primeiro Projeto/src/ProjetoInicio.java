@@ -111,4 +111,52 @@ public class ProjetoInicio {
             System.err.println("Erro: " + e + "\nA conversão para Double não pode ser realizada pois espera uma String contendo números, e recebe uma String contendo letras! Tente uma nova conversão.");
         }
     }
+
+    public static void CalculadoraIMC(){
+        Scanner teclado = new Scanner(System.in);
+        String pesoString, alturaString;
+        double peso, altura, IMC;
+        String classificacao = "";
+
+        System.out.println("Caluladora de IMC\n" + "Por favor, informe seu peso (em kg): ");
+        pesoString = teclado.nextLine();
+        System.out.println("Agora, informe sua altura (em metros): ");
+        alturaString = teclado.nextLine();
+
+        peso = Double.parseDouble(pesoString);
+        altura = Double.parseDouble(alturaString);
+
+        IMC = peso/(altura*altura);
+
+        System.out.println("\nTabela de IMC");
+        System.out.println("-------------------------------------------------------------------------");
+        System.out.printf("%-25s %20s %20s%n", "IMC", "Classificação", "   Risco de Comorbidade");
+        System.out.println("-------------------------------------------------------------------------");
+
+        System.out.printf("%-25s %20s %20s%n", "Inferior a 18,5", "Baixo peso", "Baixo");
+        System.out.printf("%-25s %20s %20s%n", "18,5 a 24,9", "Normal", "Normal");
+        System.out.printf("%-25s %20s %20s%n", "25 a 29,9", "Sobrepeso", "Aumentado");
+        System.out.printf("%-25s %20s %20s%n", "30 a 34,9", "Obesidade", "Moderado");
+        System.out.printf("%-25s %20s %20s%n", "35 a 39,9", "Obesidade Severa", "Grave");
+        System.out.printf("%-25s %20s %20s%n", "Superior a 40", "Obesidade Mórbida", "Muito Grave");
+        System.out.println("--------------------------------------------------------------------------\n");
+
+        if(IMC<18.5){
+            classificacao = "Baixo peso";
+        } else if (IMC>=18.5 && IMC <= 24.9) {
+            classificacao = "Normal";
+        }else if (IMC>=25 && IMC <= 29.9) {
+            classificacao = "Sobrepeso";
+        }else if (IMC>=30 && IMC <= 34.9) {
+            classificacao = "Obesidade";
+        }else if (IMC>=35 && IMC <= 39.9) {
+            classificacao = "Obesidade Severa";
+        }else if (IMC>=40) {
+            classificacao = "Obesidade Mórbida";
+        }
+
+        System.out.println("Calculando o IMC: IMC = peso / (altura * altura)\n");
+        System.out.printf("Seu IMC: %.2f%nSua Classificação: %s%n", IMC, classificacao);
+
+    }
 }
