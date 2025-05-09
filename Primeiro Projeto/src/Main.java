@@ -6,6 +6,7 @@ public class Main {
         //ProjetoInicio.Exercicio3();
         //ProjetoInicio.Exercicio4();
         //ProjetoInicio.Exercicio5();
-        ProjetoInicio.CalculadoraIMC();
+        //ProjetoInicio.CalculadoraIMC();
+        ProjetoInicio.Variaveis();
     }
 }

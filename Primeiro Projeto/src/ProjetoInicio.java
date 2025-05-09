@@ -159,4 +159,30 @@ public class ProjetoInicio {
         System.out.printf("Seu IMC: %.2f%nSua Classificação: %s%n", IMC, classificacao);
 
     }
+
+    public static void Variaveis(){
+        Scanner teclado = new Scanner(System.in);
+        String nome = "", estudante = "";
+        int idade;
+        double altura;
+
+        System.out.println("Coleta de dados\n" + "Informe seu nome: ");
+        nome = teclado.nextLine();
+
+        System.out.println("Agora, informe sua idade: ");
+        idade = teclado.nextInt();
+        teclado.nextLine(); //para limpar o buffer
+
+        System.out.println("Por favor, informe sua altura em metros (escreva com vírgula): ");
+        altura = teclado.nextDouble();
+        teclado.nextLine(); //limpando o buffer
+
+        System.out.println("Você é estudante?");
+        estudante = teclado.nextLine();
+
+        System.out.println("\nImprimindo informações do usuário");
+        System.out.println("--------------------------------------");
+        System.out.println("Nome do usuário: " + nome + "\nIdade: " + idade + " anos" + "\nAltura: " + altura + "(m)" + "\nÉ estudante? Resposta: " + estudante);
+
+    }
 }
