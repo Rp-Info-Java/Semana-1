@@ -195,4 +195,13 @@ public class ProjetoInicio {
         System.out.println("Multiplicação dos números: " + (num1 * num2));
         System.out.println("Divisão dos números (apenas o valor inteiro da divisão é apresentado): " + (num1 / num2));
     }
+
+    public static void StringManipulation(){
+        String palavra = "Veritas lux mea";
+
+        System.out.println("String escolhida: " + palavra);
+        System.out.println("String com letras minúsculas: " + palavra.toLowerCase());
+        System.out.println("String com letras maiúsculas: " + palavra.toUpperCase());
+        System.out.println("Número de caracteres da String: " + palavra.length());
+    }
 }
