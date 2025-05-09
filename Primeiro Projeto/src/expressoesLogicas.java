@@ -16,4 +16,48 @@ public class expressoesLogicas {
         System.out.println("Resultado 4: " + resultado4);
         System.out.println("Resultado 5: " + resultado5);
     }
+
+    public static void Comparacao(){
+        int resultado1 = 8 + 2 * 5; //saída 1: 18
+        int resultado2 = (8 + 2) * 5; //saída 2: 50
+        int resultado3 = 100 / 10 + 5 * 2; //saída 3: 20
+        int resultado4 = 100 / (10 + 5) * 2; //saída 4: 6,6666*2, mas é int, ent 12
+
+        System.out.println("Resultados das expressões: ");
+        System.out.println("Resultado 1: " + resultado1);
+        System.out.println("Resultado 2: " + resultado2);
+        System.out.println("Resultado 3: " + resultado3);
+        System.out.println("Resultado 4: " + resultado4);
+
+        int resultadoAlt1 = 8 + (2 * 5);
+        int resultadoAlt2 = (8 + 2) * 5;
+        int resultadoAlt3 = (100 / 10) + (5 * 2);
+        int resultadoAlt4 = (100 / (10 + 5)) * 2;
+
+        System.out.println("\nResultados quando há a aplicação dos parênteses para explícita ordem de avaliação: ");
+        System.out.println("Resultado 1: " + resultadoAlt1);
+        System.out.println("Resultado 2: " + resultadoAlt2);
+        System.out.println("Resultado 3: " + resultadoAlt3);
+        System.out.println("Resultado 4: " + resultadoAlt4);
+
+        //com os parênteses aplicados desta maneira, o código fica mais legível e facilita para o desenvolvedor entender a expressão lógica
+        //todavia, os resultados continuam os mesmos
+
+        //agora, se adicionarmos parênteses arbitráriamente nas equações originais, utilizando a regra de precedência, observa-se alteração nos resultados
+        //abaixo será explicitado essa lógica
+
+        int resultadoFinal1 = (8 + 2) * 5;
+        int resultadoFinal2 = (8 + 2) * 5;
+        int resultadoFinal3 = (100 / (10 + 5)) * 2;
+        int resultadoFinal4 = 100 / ((10 + 5) * 2);
+
+        System.out.println("\nAdicionando parênteses arbitrariamente sem alterar a equação original: ");
+        System.out.println("Resultado 1: " + resultadoFinal1);
+        System.out.println("Resultado 2: " + resultadoFinal2);
+        System.out.println("Resultado 3: " + resultadoFinal3);
+        System.out.println("Resultado 4: " + resultadoFinal4);
+
+        //assim, fica explícito a importância da correta análise de precedência, já que qualquer parênteses pode mudar a ordem de priorizaçãop de execução
+
+    }
 }

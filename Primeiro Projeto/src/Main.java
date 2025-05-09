@@ -13,6 +13,7 @@ public class Main {
 
         //------------------------------------//
 
-        expressoesLogicas.Previsao();
+        //expressoesLogicas.Previsao();
+        expressoesLogicas.Comparacao();
     }
 }
