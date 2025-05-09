@@ -3,7 +3,6 @@ import java.util.Currency;
 import java.util.Date;
 import java.util.Scanner;
 
-
 public class ProjetoInicio {
 
     public static void Aula1() {
@@ -43,8 +42,19 @@ public class ProjetoInicio {
         numDouble2 = Double.parseDouble(num2);
 
         System.out.println("Conversão String para int:\n" + "Número 1: " + numInt1 + "\n" + "Número 2: " + numInt2);
-
         System.out.println("Conversão String para double:\n" + "Número 1: " + numDouble1 + "\n" + "Número 2: " + numDouble2 + "\n");
+
+        System.out.println("Soma dos números int: " + numInt1 + "+" + numInt2 + "= " + (numInt1 + numInt2));
+        System.out.println("Subtração dos números int: " + numInt1 + "-" + numInt2 + "= " + (numInt1 - numInt2));
+        System.out.println("Multiplicação dos números int: " + numInt1 + "*" + numInt2 + "= " + (numInt1 * numInt2));
+        System.out.println("Divisão dos números int: " + numInt1 + "/" + numInt2 + "= " + (numInt1 / numInt2) + "\n");
+
+        System.out.println("|------------------------------------------------------------|\n");
+
+        System.out.println("Soma dos números double: " + numDouble1 + "+" + numDouble2 + "= " + (numDouble1 + numDouble2));
+        System.out.println("Subtração dos números double: " + numDouble1 + "-" + numDouble2 + "= " + (numDouble1 - numDouble2));
+        System.out.println("Multiplicação dos números double: " + numDouble1 + "*" + numDouble2 + "= " + (numDouble1 * numDouble2));
+        System.out.println("Divisão dos números double: " + numDouble1 + "/" + numDouble2 + "= " + (numDouble1 / numDouble2));
     }
 
     public static void Exercicio2(){
