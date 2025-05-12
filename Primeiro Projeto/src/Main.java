@@ -21,7 +21,7 @@ public class Main {
         //Condicionais.VerificacaoNum();
         //Condicionais.ClassificaNota();
         //Condicionais.MenuOps();
-        Condicionais.DiaSemana();
-
+        //Condicionais.DiaSemana();
+        Condicionais.ParImpar();
     }
 }

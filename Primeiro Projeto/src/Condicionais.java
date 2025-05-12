@@ -121,5 +121,19 @@ public class Condicionais {
 
         System.out.println(nomeDia);
     }
+
+    public static void ParImpar(){
+        Scanner teclado = new Scanner(System.in);
+        int num;
+        String verifica;
+
+        System.out.println("Verificação de número par ou ímpar");
+        System.out.println("Digite um número inteiro: ");
+        num = teclado.nextInt();
+
+        verifica = (num % 2 == 0) ? "O número é par." : "O número é ímpar.";
+
+        System.out.println(verifica);
+    }
 }
 
