@@ -18,7 +18,8 @@ public class Main {
         //expressoesLogicas.ExpressaoComplexa();
         //expressoesLogicas.ExtraTemperatura();
         //expressoesLogicas.ExtraMinutos();
-        Condicionais.VerificacaoNum();
+        //Condicionais.VerificacaoNum();
+        Condicionais.ClassificaNota();
 
     }
 }
