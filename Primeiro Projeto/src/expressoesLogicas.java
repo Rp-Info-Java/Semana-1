@@ -1,3 +1,4 @@
+import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
 
 public class expressoesLogicas {
@@ -74,5 +75,29 @@ public class expressoesLogicas {
 
         //a ordem em que a expressão está sendo executada é: começa com a multiplicação (2*3), depois a divisão (4/2), em seguida a subtração de 10 pelo resultado da multiplicação
         //e por fim a soma desse resultado com a divisão de 4 por 2.
+    }
+
+    public static void ExtraTemperatura(){
+        Scanner teclado = new Scanner(System.in);
+        double temp, resultado;
+        int opcao;
+
+        System.out.println("Conversor de temperatura\n Opções de conversão:\n 1->Fahrenheit (ºF) para Celsius (ºC)\n 2->Celsius(ºC) para Fahrenheit(ºF)" );
+        System.out.println("Digite qual conversão você quer fazer (1 ou 2): ");
+        opcao = teclado.nextInt();
+        System.out.println("Informe a temperatura a ser convertida: ");
+        temp = teclado.nextDouble();
+
+        if(opcao == 1){
+            resultado = ((5*(temp - 32.0)) / 9.0);
+
+            System.out.println("Temperatura informada em Fahrenheit (ºF): " + temp + " ºF" + "\nTemperatura convertida para Celsius (ºC): " + resultado + " ªC");
+        }else if (opcao == 2){
+            resultado = ((temp * (9.0/5.0)) + 32.0);
+
+            System.out.println("Temperatura informada em Celsius (ºC): " + temp + " ºC" + "\nTemperatura convertida para Fahrenheit (ºF): " + resultado + " ºF");
+        }
+
+
     }
 }

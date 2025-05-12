@@ -15,6 +15,7 @@ public class Main {
 
         //expressoesLogicas.Previsao();
         //expressoesLogicas.Comparacao();
-        expressoesLogicas.ExpressaoComplexa();
+        //expressoesLogicas.ExpressaoComplexa();
+        expressoesLogicas.ExtraTemperatura();
     }
 }
