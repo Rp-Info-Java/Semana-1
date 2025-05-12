@@ -16,6 +16,8 @@ public class Main {
         //expressoesLogicas.Previsao();
         //expressoesLogicas.Comparacao();
         //expressoesLogicas.ExpressaoComplexa();
-        expressoesLogicas.ExtraTemperatura();
+        //expressoesLogicas.ExtraTemperatura();
+        expressoesLogicas.ExtraMinutos();
+
     }
 }

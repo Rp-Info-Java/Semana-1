@@ -1,5 +1,6 @@
 import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class expressoesLogicas {
 
@@ -97,7 +98,22 @@ public class expressoesLogicas {
 
             System.out.println("Temperatura informada em Celsius (ºC): " + temp + " ºC" + "\nTemperatura convertida para Fahrenheit (ºF): " + resultado + " ºF");
         }
+    }
 
+    public static void ExtraMinutos(){
+        Scanner teclado = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#");
+        double minAno, min;
+        long ano;
+        int dias;
 
+        System.out.println("Informe uma quantia de minutos a serem convertidos para ano(s) e dias: ");
+        min = teclado.nextDouble();
+
+        minAno = 60*24*365;
+        ano = (long)(min/minAno);
+        dias = (int)((min/(60*24)) % 365);
+
+        System.out.println(df.format(min) + " minutos são equivalentes a " + ano + " ano(s) e " + dias + " dias");
     }
 }
