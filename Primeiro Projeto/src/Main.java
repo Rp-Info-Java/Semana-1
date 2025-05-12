@@ -19,7 +19,8 @@ public class Main {
         //expressoesLogicas.ExtraTemperatura();
         //expressoesLogicas.ExtraMinutos();
         //Condicionais.VerificacaoNum();
-        Condicionais.ClassificaNota();
+        //Condicionais.ClassificaNota();
+        Condicionais.MenuOps();
 
     }
 }

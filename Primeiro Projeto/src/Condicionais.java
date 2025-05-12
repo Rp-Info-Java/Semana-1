@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
@@ -43,4 +44,51 @@ public class Condicionais {
 
         }while (num > 100);
     }
+
+    public static void MenuOps(){
+        Scanner teclado = new Scanner(System.in);
+        int num1, num2, opcao = 0;
+        double div;
+
+        do {
+                System.out.println("""
+                        Escolha uma operação:
+                        1. Soma
+                        2. Subtração
+                        3. Multiplicação
+                        4. Divisão
+                        """);
+                System.out.println("Opção: ");
+                opcao = teclado.nextInt();
+
+                if(opcao < 1 || opcao > 4){
+                    System.out.println("Opção inválida, digite uma opção válida (1 - 4)!\n");
+                }
+
+        }while (opcao < 1 || opcao > 4) ;
+
+            System.out.println("Digite o primeiro número: ");
+            num1 = teclado.nextInt();
+
+            System.out.println("Digite o segundo número: ");
+            num2 = teclado.nextInt();
+
+            div = (double) num1 / (double) num2;
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Resultado da Soma: " + (num1 + num2));
+                    break;
+                case 2:
+                    System.out.println("Resultado da Subtração: " + (num1 - num2));
+                    break;
+                case 3:
+                    System.out.println("Resultado da Multiplicação: " + (num1 * num2));
+                    break;
+                case 4:
+                    System.out.println("Resultado da Divisão: " + div);
+                    break;
+            }
+    }
 }
+
