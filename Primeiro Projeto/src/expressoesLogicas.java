@@ -60,4 +60,19 @@ public class expressoesLogicas {
         //assim, fica explícito a importância da correta análise de precedência, já que qualquer parênteses pode mudar a ordem de priorizaçãop de execução
 
     }
+
+    public static void ExpressaoComplexa(){
+        int resultado = 10 - 2 * 3 + 4 / 2; //previsao: 6
+
+        System.out.println("Resultado da equação: " + resultado);
+
+        System.out.println("Escrevendo a equação de maneira explícita: int resultadoAlt = (10 - (2*3)) + (4/2)");
+
+        int resultadoAlt = (10 - (2*3)) + (4/2);
+
+        System.out.println("Resultado da reescrita da operação: " + resultadoAlt);
+
+        //a ordem em que a expressão está sendo executada é: começa com a multiplicação (2*3), depois a divisão (4/2), em seguida a subtração de 10 pelo resultado da multiplicação
+        //e por fim a soma desse resultado com a divisão de 4 por 2.
+    }
 }
