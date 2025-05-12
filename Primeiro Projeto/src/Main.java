@@ -20,7 +20,8 @@ public class Main {
         //expressoesLogicas.ExtraMinutos();
         //Condicionais.VerificacaoNum();
         //Condicionais.ClassificaNota();
-        Condicionais.MenuOps();
+        //Condicionais.MenuOps();
+        Condicionais.DiaSemana();
 
     }
 }

@@ -90,5 +90,36 @@ public class Condicionais {
                     break;
             }
     }
+
+    public static void DiaSemana(){
+        Scanner teclado = new Scanner(System.in);
+        int dia;
+
+        System.out.println("""
+                Dias da Semana:
+                1 -> "Segunda-feira";
+                2 -> "Terça-feira";
+                3 -> "Quarta-feira";
+                4 -> "Quinta-feira";
+                5 -> "Sexta-feira";
+                6 -> "Sábado";
+                7 -> "Domingo";
+                """);
+        System.out.println("Digite um dia da semana (1-7): ");
+        dia = teclado.nextInt();
+
+        String nomeDia = switch (dia){
+            case 1 -> "Segunda-feira";
+            case 2 -> "Terça-feira";
+            case 3 -> "Quarta-feira";
+            case 4 -> "Quinta-feira";
+            case 5 -> "Sexta-feira";
+            case 6 -> "Sábado";
+            case 7 -> "Domingo";
+            default -> "Dia não existente na semana.";
+        };
+
+        System.out.println(nomeDia);
+    }
 }
 
