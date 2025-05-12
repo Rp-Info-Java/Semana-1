@@ -17,7 +17,8 @@ public class Main {
         //expressoesLogicas.Comparacao();
         //expressoesLogicas.ExpressaoComplexa();
         //expressoesLogicas.ExtraTemperatura();
-        expressoesLogicas.ExtraMinutos();
+        //expressoesLogicas.ExtraMinutos();
+        Condicionais.VerificacaoNum();
 
     }
 }
