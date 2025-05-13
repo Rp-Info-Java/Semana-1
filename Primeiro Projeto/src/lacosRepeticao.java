@@ -1,4 +1,7 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
+
 
 public class lacosRepeticao {
     public static void ContRegressiva(){
@@ -41,5 +44,33 @@ public class lacosRepeticao {
         }
         media = soma/cont;
         System.out.println("Média das notas: " + Math.round(media*100.0)/100.0); //pequena gambiarra para arredondar o valor decimal
+    }
+
+    public static void Menu(){
+        Scanner teclado = new Scanner(System.in);
+        Date dataHora = new Date();
+        int num;
+
+        String data = new SimpleDateFormat("dd/MM/yyyy").format(dataHora);
+        String hora = new SimpleDateFormat("HH:mm:ss").format(dataHora);
+
+        do {
+            System.out.println("""
+                    Menu:
+                    1 - Exibir mensagem de boas-vindas
+                    2 - Exibir data e hora atual
+                    0 - Sair
+                    """);
+            System.out.println("Escolha uma opção: "); //print fora do de cima para evitar espaços desnecessários no console na hora de informar o número
+            num = teclado.nextInt();
+
+            if(num < 0 || num > 2){
+                System.out.println("A opção de menu selecionada é inválida! Por favor, insira uma opção de menu válida.\n");
+            } else if(num == 1){
+                System.out.println("Bem-vindo ao sistema!\n");
+            } else if (num == 2){
+                System.out.println("Data de hoje: " + data + "\nHorário atual: " + hora + "\n");
+            }
+        }while(num != 0);
     }
 }

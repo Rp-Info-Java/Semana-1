@@ -25,6 +25,7 @@ public class Main {
         //Condicionais.ParImpar();
         //Condicionais.Descontos();
         //lacosRepeticao.ContRegressiva();
-        lacosRepeticao.Notas();
+        //lacosRepeticao.Notas();
+        lacosRepeticao.Menu();
     }
 }
