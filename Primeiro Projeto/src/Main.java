@@ -26,6 +26,7 @@ public class Main {
         //Condicionais.Descontos();
         //lacosRepeticao.ContRegressiva();
         //lacosRepeticao.Notas();
-        lacosRepeticao.Menu();
+        //lacosRepeticao.Menu();
+        //lacosRepeticao.Tabuada();
     }
 }
