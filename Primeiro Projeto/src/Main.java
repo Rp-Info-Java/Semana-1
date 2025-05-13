@@ -22,6 +22,7 @@ public class Main {
         //Condicionais.ClassificaNota();
         //Condicionais.MenuOps();
         //Condicionais.DiaSemana();
-        Condicionais.ParImpar();
+        //Condicionais.ParImpar();
+        Condicionais.Descontos();
     }
 }

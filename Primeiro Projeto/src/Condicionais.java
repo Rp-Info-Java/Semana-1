@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Objects;
 import java.util.Scanner;
 
 
@@ -134,6 +135,69 @@ public class Condicionais {
         verifica = (num % 2 == 0) ? "O número é par." : "O número é ímpar.";
 
         System.out.println(verifica);
+    }
+
+    public static void Descontos(){
+        //nao utilizar for/while/etc
+        Scanner teclado = new Scanner(System.in);
+        double valor, desconto;
+        String membro;
+        int opcao;
+
+        System.out.println("Digite o valor total da compra: R$ ");
+        valor = teclado.nextDouble();
+        teclado.nextLine();
+
+        System.out.println("Você é membro do programa de fidelidade? (sim/não): ");
+        membro = teclado.nextLine();
+
+        if(Objects.equals(membro, "sim") || Objects.equals(membro, "SIM") || Objects.equals(membro, "s") || Objects.equals(membro, "S")){
+            if(valor > 500){
+                desconto = valor*0.8;
+                System.out.println("Desconto aplicado: 20%");
+
+            }else if (valor >= 200 && valor <= 500){
+                desconto = valor*0.9;
+                System.out.println("Desconto aplicado: 10%");
+
+            } else {
+                desconto = valor*0.95;
+                System.out.println("Desconto aplicado: 5%");
+            }
+        }else{
+            if(valor > 300){
+                desconto = valor*0.95;
+                System.out.println("Desconto aplicado: 5%");
+            }else{
+                desconto = valor;
+                System.out.println("Não houve aplicação de desconto.");
+            }
+        }
+
+        System.out.println("""
+                Escolha o método de pagamento:
+                1. Dinheiro
+                2. Cartão de Débito
+                3. Cartão de Crédito
+                4. PIX
+                """);
+        System.out.println("Opção: ");
+        opcao = teclado.nextInt();
+
+        String pagamento = switch (opcao){
+            case 1 -> "Pagamento por Dinheiro selecionado.";
+            case 2 -> "Pagamento via Cartão de Débito selecionado.";
+            case 3 -> "Pagamento via Cartão de Crédito selecionado.";
+            case 4 -> "Pagamento via PIX selecionado.";
+            default -> "Método de pagamento selecionado é inválido!";
+        };
+
+        System.out.println(pagamento);
+        if(Objects.equals(pagamento, "Método de pagamento selecionado é inválido!")){
+            System.out.println("Realize a operação novamente e selecione um método de pagamento válido!\n");
+        }else{
+            System.out.println("Valor final da compra: R$  " + desconto);
+        }
     }
 }
 
