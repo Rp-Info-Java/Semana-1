@@ -23,6 +23,8 @@ public class Main {
         //Condicionais.MenuOps();
         //Condicionais.DiaSemana();
         //Condicionais.ParImpar();
-        Condicionais.Descontos();
+        //Condicionais.Descontos();
+        //lacosRepeticao.ContRegressiva();
+        lacosRepeticao.Notas();
     }
 }
