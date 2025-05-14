@@ -28,5 +28,6 @@ public class Main {
         //lacosRepeticao.Notas();
         //lacosRepeticao.Menu();
         //lacosRepeticao.Tabuada();
+        lacosRepeticao.jogoAdivivinha();
     }
 }
